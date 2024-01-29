@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            LOGIN PAGE
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: rgb(163, 136, 122);
+            }
+            .maindiv{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .loginfields{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+            form{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 1rem;
+            }
+            #username,#password{
+                width: 24%;
+            }
+            #lgbutton{
+                width: 5rem;
+                height: 2rem;
+                margin-top: 3rem;
+                position: relative;
+            }
+            #lgbutton:hover{
+                left: 12rem;
+                width: 5rem;
+                height: 2rem;
+                margin-top: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maindiv">
+            <div class="loginfields">
+                <form>
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </form>
+            </div>
+            <div class="btn">
+                <button id="lgbutton">LOGIN</button>
+            </div>
+        </div>
+    </body>
+</html>
